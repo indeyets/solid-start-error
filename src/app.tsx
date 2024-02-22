@@ -1,5 +1,6 @@
 // @refresh reload
 import { createSignal } from "solid-js";
+import { HttpStatusCode } from "@solidjs/start";
 import "./app.css";
 
 export default function App() {
@@ -18,6 +19,8 @@ export default function App() {
         </a>{" "}
         to learn how to build SolidStart apps.
       </p>
+
+      <HttpStatusCode code={404} />
     </main>
   );
 }
